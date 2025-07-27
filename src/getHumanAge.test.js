@@ -10,6 +10,8 @@ describe('getHumanAge', () => {
 
   test('animals age until 15 years should give 0 years', () => {
     expect(getHumanAge(14, 14)).toEqual([0, 0]);
+    expect(getHumanAge(1, 1)).toEqual([0, 0]);
+    expect(getHumanAge(0, 0)).toEqual([0, 0]);
   });
 
   test('animals age above 15 and below 24 should give 1 year', () => {
